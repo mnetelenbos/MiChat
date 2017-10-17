@@ -1,0 +1,94 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 13px;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.username {
+    color: #000;
+    font-size: 25px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.window {
+    flex-flow: column;
+    margin: 0 auto;
+    width: 600px;
+    max-height: 600px;
+    /*background-color: #6363bf;*/
+}
+
+.client-info{
+    display: flex;
+    flex-flow: row;
+    height: 60px;
+    background-color: #6363bf;
+}
+
+.members-count,
+.members-list,
+.messages {
+    border-top: 2px solid #6363bf;
+    padding: 15px;
+    height: 40%;
+    word-wrap: break-word;
+    background-color: #FFFFFF;
+    flex-shrink: 1;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.members-count:hover {
+    background-color: #9999df;
+}
+
+.messages {
+    min-height: 300px;
+}
+
+.message {
+    padding: 5px 0;
+}
+
+.message .member {
+    display: inline-block;
+}
+
+.member {
+    padding-right: 10px;
+    position: relative;
+}
+
+.message-form {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.message-form__input {
+    flex-grow: 1;
+    border: 1px solid #dfdfdf;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #9999df;
+}
+
+.message-form__button {
+    margin: 10px;
+    background-color: #9999df;
+}
+
+.message-form__button:hover {
+    margin: 10px;
+    background-color: #6363bf;
+}
+
+.mdl-card{
+    border-radius: 6px;
+    border: 1px solid #6363bf;
+}
