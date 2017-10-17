@@ -6,7 +6,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
 
+footer {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
 }
 
 .username {

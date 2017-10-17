@@ -65,10 +65,13 @@ drone.on('error', error => {
 
 function getName() {
     const username = prompt("Please enter your displayname");
-    document.getElementById('username').innerHTML = "You're logged in as: " + username;
-    return (
-      username
-    );
+
+    if (username !== ''){
+        document.getElementById('username').innerHTML = "You're logged in as: " + username;
+        return username
+    } else {
+        getName();
+    }
 }
 
 function getRandomColor() {
