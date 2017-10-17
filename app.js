@@ -70,7 +70,7 @@ function getName() {
         document.getElementById('username').innerHTML = "You're logged in as: " + username;
         return username
     } else {
-        getName();
+        return getName();
     }
 }
 
