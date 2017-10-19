@@ -118,6 +118,9 @@ function createMessageElement(text, member) {
     el.appendChild(createMemberElement(member));
     el.appendChild(document.createTextNode(text));
     el.className = 'message';
+    el.innerHTML = el.innerHTML.replace(/(http:\/\/[^\s]+)/g, "<a href='$1' target=\"_blank\">$1</a>");
+    el.innerHTML = el.innerHTML.replace(/(https:\/\/[^\s]+)/g, "<a href='$1' target=\"_blank\">$1</a>");
+    el.innerHTML = el.innerHTML.replace(/(www[^\s]+)/g, "<a href='https://$1' target=\"_blank\">$1</a>");
     return el;
 }
 
